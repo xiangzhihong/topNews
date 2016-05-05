@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffafafa">
+
+   <RelativeLayout
+       android:id="@+id/category_layout"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:background="@color/c9">
+
+      <ImageView
+          android:id="@+id/add_channel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:contentDescription="@string/app_name"
+          android:scaleType="centerCrop"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:background="@drawable/add_channel_selector" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:layout_toLeftOf="@id/add_channel">
+
+         <xzh.com.wangyinews.view.strip.TabStrip
+             android:id="@+id/tabstrip"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             app:indicatorLineColor="@color/c12"
+             app:indicatorHeight="3px"
+             app:tabTextSize="16sp"
+             app:tabCheckTextColor="@color/c12"
+             app:tabPaddingLeftRight="15dp"
+             android:scrollbars="none"
+             />
+      </LinearLayout>
+   </RelativeLayout>
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/view_pager"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@id/category_layout" />
+</LinearLayout>

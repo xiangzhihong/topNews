@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/item_tab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="4.0dip"
+        android:textColor="@color/c6"
+        android:textSize="18sp"
+        android:text="推荐" />
+
+     <View
+        android:id="@+id/item_indicator"
+         android:layout_width="match_parent"
+         android:layout_height="2px"
+         android:layout_below="@+id/item_tab_name"
+         android:background="@color/c9"
+         android:layout_alignLeft="@+id/item_tab_name"
+         android:layout_alignRight="@+id/item_tab_name"
+         android:visibility="gone"
+         />
+</RelativeLayout>

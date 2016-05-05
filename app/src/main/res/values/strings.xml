@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">今日头条</string>
+    <string name="xinwen">新闻</string>
+    <string name="read">阅读</string>
+    <string name="video">视频</string>
+    <string name="topic">话题</string>
+    <string name="me">我</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="38.0dp"
+    android:minWidth="80.0dp">
+
+    <TextView
+        android:id="@+id/item_channel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/item_channe_bg"
+        android:gravity="center"
+        android:minHeight="30.0dip"
+        android:minWidth="80.0dip"
+        android:text="推荐"
+        android:textColor="@color/c7"
+        android:textSize="14.0sp" />
+
+    <CheckBox
+        android:id="@+id/channel_edit"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/add_channels_close_icon"
+        android:button="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>
